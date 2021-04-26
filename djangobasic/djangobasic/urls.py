@@ -18,5 +18,6 @@ from django.urls import path
 from blogs import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/',views.hello)
+    path('home/',views.hello),
+    path('web/',views.web) # web/index.html  in templates
 ]
