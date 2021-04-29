@@ -5,10 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello My Website</title>
+    <style>
+        body {
+            background-color: lightblue;
+            }
+
+            h1 {
+            color: white;
+            text-align: center;
+            }
+
+            p {
+            font-family: verdana;
+            font-size: 20px;
+            }
+    </style>
+        
+    <script>
+        function myFunction() {
+            var x = document.getElementById("demo");
+            x.style.fontSize = "25px"; 
+            x.style.color = "red"; 
+          }
+
+          function myFunctionback() {
+            var x = document.getElementById("demo");
+            x.style.fontSize = "25px"; 
+            x.style.color = "black"; 
+          }
+    </script>
+
 </head>
 <body>
-    <h2>Home Page</h2>
+    <h1>Home Page</h2>
     <p>pinzaa</p>
+    <p id="demo">Click the button to change the layout of this paragraph</p>
+    <button onclick="myFunction()">Click Me!</button>
+    <button onclick="myFunctionback()">Click Me! back</button><br>
+    
+    <h2> ชื่อบทความ : {{name}}</h2>
+    <h2> ชื่อผู้แต่ง : {{author}}</h2>
 
 </body>
 </html>
