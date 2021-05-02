@@ -6,6 +6,14 @@ def hello(request):
     return HttpResponse("<h1> HELLO WORLD </h1>")
 
 def web(request):
-
-    return render(request,'index.html',{'name':'บทความทำไงให้หล่อ',
-    'author':'pinzaa'}) # web/index.html  in templates
+    tags = ['หล่อ','รวย','เท่']
+    age = 36
+    txt = "My name is John, and I am {}"
+    text1 = txt.format(age)
+    return render(request,'index.html',
+    {
+        'name':'บทความทำไงให้หล่อ',
+        'author':'pinzaa',
+        'tags':tags,
+        'text':text1
+    }) # web/index.html  in templates

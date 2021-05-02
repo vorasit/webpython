@@ -28,7 +28,7 @@
             x.style.color = "red"; 
           }
 
-          function myFunctionback() {
+        function myFunctionback() {
             var x = document.getElementById("demo");
             x.style.fontSize = "25px"; 
             x.style.color = "black"; 
@@ -45,6 +45,15 @@
     
     <h2> ชื่อบทความ : {{name}}</h2>
     <h2> ชื่อผู้แต่ง : {{author}}</h2>
+    <h3>{{text}}</h3>
+    <h2>ป้ายกำกับ</h2>
+    <ol>
+    {% for tag in tags %}
+        <li>{{tag}}</li>
+    {% endfor %}
+    </ol>
+
+    
 
 </body>
 </html>
