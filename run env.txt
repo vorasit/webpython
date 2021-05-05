@@ -1,0 +1,16 @@
+การติดตั้ง
+pip install virtualenv
+
+เรียกใช้ virtualenv ด้วย virtualenvwrapper
+For Linux :
+pip install virtualenvwrapper
+For Windows :
+pip install virtualenvwrapper-win
+
+สร้าง virtualenv ใหม่
+
+mkvirtualenv <ชื่อ>
+
+เลือก/เปลี่ยนการใช้ virtualenv
+
+workon <ชื่อ>
