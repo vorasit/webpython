@@ -4,3 +4,11 @@ python manage.py runserver
 http://127.0.0.1:8000/
 
 https://github.com/vorasit
+
+
+
+cd C:\Users\Asus\Desktop\web\vr_web
+scripts\activate
+cd..
+cd djangobasic
+python manage.py runserver
