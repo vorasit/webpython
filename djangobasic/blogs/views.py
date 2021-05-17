@@ -28,3 +28,13 @@ def page1(request):
 
 def createForm(request):
     return render(request, 'form.html')
+
+def addBlog(request):
+    name = request.GET['name']
+    description = request.GET['description']
+    return render(request, 'result.html',
+    {
+        'name':name,
+        'description':description
+    
+    })

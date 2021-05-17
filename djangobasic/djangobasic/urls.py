@@ -21,5 +21,6 @@ urlpatterns = [
     
     path('',views.hello), # web/index.html  in templates
     path('page1',views.page1) ,
-    path('createForm',views.createForm) 
+    path('createForm',views.createForm) ,
+    path('addForm',views.addBlog)
 ]
