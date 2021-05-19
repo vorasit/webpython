@@ -5,7 +5,8 @@
 
 <h2 align="center">เขียนบทความ</h2>
 
-<form action="addForm" method="get">
+<form action="addForm" method="POST">
+    {% csrf_token %}
     <div class="form-group">
         <label for="">ชื่อบทความ</label>
         <input type="text" class="form-control" name="name">
