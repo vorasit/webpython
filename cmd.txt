@@ -5,6 +5,11 @@ http://127.0.0.1:8000/
 
 https://github.com/vorasit
 
+สร้าง model หลังจากกำหนดฟิลและกำหนด setting กับ mysql
+python manage.py makemigrations
+
+รันไฟลที่ได้ลง mysql
+python manage.py migrate
 
 
 cd C:\Users\Asus\Desktop\web\vr_web
